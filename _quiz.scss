@@ -1,0 +1,91 @@
+.quiz-form {
+    width: 40%;
+    border-radius: 10px;
+    min-height: 50vh;
+    box-shadow: 0 0 1px 1px white;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    overflow: hidden;
+    background: linear-gradient(to top right, blue, yellow);
+    // display: none;
+    transition: 1s ease-in-out;
+
+    transform: scale(0);
+    position: relative;
+
+    .header {
+        padding: 4rem 0;
+        width: 80%;
+        margin: auto;
+        h2 {
+            // text-align: center;
+            color: white;
+            font-size: 25px;
+            margin: 0;
+            padding-bottom: 2rem;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        li {
+            font-size: 1.2rem;
+            padding: 10px;
+            border-bottom: 1px solid white;
+            border-radius: 5px;
+            color: goldenrod;
+            margin-bottom: 10px;
+            border-right: 1px solid white;
+        }
+        label {
+            margin-left: 1.5rem;
+            cursor: pointer;
+        }
+    }
+    
+    button {
+        background-color: $c2;
+        display: block;
+        border: none;
+        cursor: pointer;
+        font-size: 1.1rem;
+        padding: .5rem;
+        border-radius: 5px;
+        color: white;
+        width: 30%;
+        margin: auto;
+        margin-bottom: 1rem;
+
+        &:hover {
+            background-color: $c1;
+        }
+        &:focus {
+            outline: none;
+            background-color: $c3;
+        }
+    }
+}
+
+
+@media (max-width:900px){
+    
+    .quiz-form{
+        width: 50%;
+    }
+
+}
+@media (max-width:768px){
+    
+    .quiz-form{
+        width: 80%;
+    }
+}
+@media (max-width:400px){
+    .quiz-form{
+        width: 90%;
+
+}
+}

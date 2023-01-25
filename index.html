@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Quiz</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./all.min.css">
+</head>
+<body>
+    <div class="start-form" id="start-form">
+        <div class="image">
+        <img src="./bible-verse-god.gif" alt="bible logo"></div>
+        <p>For God so loved the world, that he gave his only begotten son, that whosoever believeth in him should not perish, but have everlasting life. (John 3:16)  </p>
+        <button><span>Start Quiz</span> <span id="start"> <i class="fas fa-arrow-right"></i></span></button>
+    </div>
+
+    <!-- Quiz Form -->
+
+    <div class="quiz-form" id="quiz" >
+        <div class="header">
+        <h2 id="question">Questions</h2>
+
+        <ul>
+            <li>
+                <input type="radio" name="answer" id="a" class="answer">
+                <label for="a" id="a_text"> Answer</label>
+            </li>
+
+            <li>
+                <input type="radio" name="answer" id="b" class="answer">
+                <label for="b" id="b_text"> Answer</label>
+            </li>
+
+            <li>
+                <input type="radio" name="answer" id="c" class="answer">
+                <label for="c" id="c_text"> Answer</label>
+            </li>
+
+            <li>
+                <input type="radio" name="answer" id="d" class="answer">
+                <label for="d" id="d_text"> Answer</label>
+            </li>
+        </ul>
+    </div>
+    <!-- <div class="btns"> -->
+    <!-- <button id="previous">Previous question</button> -->
+        <button id="submit">Submit</button>
+    <!-- </div> -->
+    </div>
+
+
+
+    <script src="./all.min.js"></script>
+    <script src="./quiz.js"></script>
+</body>
+</html>
